@@ -1,0 +1,13 @@
+{% block title %} People Creation Page {% endblock %}
+
+{% block content %}
+
+<h3> Create a Person </h3>
+<form method="POST" action="{{url_for('people.create')}}">
+	<input type="text" name="name" placeholder="name" /><br/>
+	<input type="number" name="age" placeholder="age" /><br/>
+	<input type="text" name="job" placeholder="job" /><br/>
+	<input type="submit" name="Create Person">
+</form>
+	
+{% endblock %}

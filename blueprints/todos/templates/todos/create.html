@@ -1,0 +1,13 @@
+{% block title %} Todos Creation Page {% endblock %}
+
+{% block content %}
+
+<h3> Create a Todo </h3>
+<form method="POST" action="{{url_for('todos.create')}}">
+	<input type="text" name="name" placeholder="name" /><br/>
+	<input type="checkbox" name="done" placeholder="done" /><br/>
+	<input type="text" name="description" placeholder="description" /><br/>
+	<input type="submit" name="Create Todo">
+</form>
+	
+{% endblock %}

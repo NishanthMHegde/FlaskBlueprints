@@ -1,0 +1,11 @@
+{% block title %} Todos Page {% endblock %}
+
+{% block content %}
+
+<ul>
+	{% for todo in todos %}
+<li> {{todo.name}}</li>
+	{% endfor %}
+	</ul>
+	<a href="{{url_for('todos.create')}}"> Create a new Todo </a>
+{% endblock %}

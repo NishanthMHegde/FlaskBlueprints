@@ -1,0 +1,12 @@
+{% block title %} People Page {% endblock %}
+
+{% block content %}
+
+<ul>
+	{% for person in people %}
+<li> {{person.name}}</li>
+	{% endfor %}
+	</ul>
+<a href="{{url_for('people.create')}}"> Create a new Person </a>
+	
+{% endblock %}
